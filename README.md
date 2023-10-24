@@ -25,10 +25,10 @@ Clone this repository. A recommended directory structure would look like so:
 
 ```bash
 ├── matlab_cosimulation/
-|   ├── custom_message/
-│   |   ├── cart_pole/
-│   |   │   └── srv/
-│   |   │   │    ├── LaunchParameters.srv
+│   ├── custom_message/
+│   │   ├── cart_pole/
+│   │   │   └── srv/
+│   │   │   │    ├── LaunchParameters.srv
 │   ├── simulation.m
 ```
 
