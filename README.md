@@ -37,6 +37,10 @@ Clone this repository. A recommended directory structure would look like so:
 Before starting the simulation, you must generate the ROS custom messages inside the `cart_pole` folder. To do that run the following commands inside Matlab command window:
 ```bash
 rosgenmsg('custom_message')
+addpath(fullfile(pwd,'custom_messages/matlab_msg_gen_ros1\win64\install\m')
+savepath
+clear classes
+rehash toolboxcache
 ```
 
 ## License and Usage
