@@ -33,7 +33,10 @@ Clone this repository. A recommended directory structure would look like so:
 
 
 ## Run
-Before starting the simulation, you must generate the ROS custom messages inside the c
+Before starting the simulation, you must generate the ROS custom messages inside the `cart_pole` folder. To do that run the following commands inside Matlab command window:
+```bash
+rosgenmsg(cart_pole)
+```
 
 ## License and Usage
 This co-simulation framework is developed in the erc-dynamics Lab. Please use wisely, and recommend improvements!
