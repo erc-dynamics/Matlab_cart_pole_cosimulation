@@ -14,6 +14,7 @@ This setup utilizes two computers:
 The Ubuntu computer uses ROS for robot simulation in the Gazebo setting. We highly recommend using the ROS Noetic version that was originally used for this project's development.
 - `ROS Noetic Desktop-Full Install`: To install ROS Noetic please follow the instructions at [installation](https://wiki.ros.org/noetic/Installation/Ubuntu) document.
 - Create a [catkin workspace](https://wiki.ros.org/catkin/Tutorials/create_a_workspace), follow the instructions.
+- Read and follow the Build and Run instructions [here](https://github.com/erc-dynamics/cart_pole/tree/main#build-ubuntu-2004) to setup your Ubuntu machine for co-simulation.
 
 ## Installation (Windows machine)
 The Windows machine runs Matlab, which needs to interface with ROS.
