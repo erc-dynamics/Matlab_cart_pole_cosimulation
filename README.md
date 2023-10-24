@@ -43,8 +43,8 @@ rehash toolboxcache
 
 
 ## Run
-Firstly, you must prepare the Ubuntu machine. Please read and follow the instructions [here](https://github.com/erc-dynamics/cart_pole/tree/main#run) before running the Matlab code.
-To run the co-simulation, open `simulation.m` file inside Matlab. Inside `try-catch` block, you must change the IPaddresses to match your setup. Ensure that `<UbuntuIP>`, `<WindowsIP>` matches the IPaddresses of your ubuntu machine and windows machine respectively.
+First, set up the Ubuntu machine by closely following the guidelines provided [here](https://github.com/erc-dynamics/cart_pole/tree/main#run). Ensure this is done prior to executing the Matlab code.
+To initiate the co-simulation, launch the `simulation.m` file inside Matlab. Within the try-catch section, adjust the IP addresses to align with your configuration. Make certain that `<UbuntuIP>` corresponds to your Ubuntu machine's IP and `<WindowsIP>` to your Windows machine's IP.
 ```matlab
 try
     setenv('ROS_MASTER_URI', 'http://<UbuntuIP>:11311')
@@ -54,7 +54,7 @@ catch
 end
 ```
 
-The build process is finished. You can start the simulation and run the code.
+The build process is complete. You can now initiate the simulation and execute the code.
 
 
 ## License and Usage
