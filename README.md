@@ -32,8 +32,6 @@ Clone this repository. A recommended directory structure would look like so:
 │   ├── simulation.m
 ```
 
-
-## Run
 Before starting the simulation, you must generate the ROS custom messages inside the `cart_pole` folder. To do that run the following commands inside Matlab command window:
 ```bash
 rosgenmsg('custom_message')
@@ -42,6 +40,19 @@ savepath
 clear classes
 rehash toolboxcache
 ```
+
+
+## Run
+To run the co-simulation, open `simulation.m` file inside Matlab. Inside `try-catch` block, you must change the IPaddresses to match your setup. Ensure that `<UbuntuIP>`, `<WindowsIP>` matches the IPaddress of your ubuntu machine and windows machine respectively.
+```matlab
+try
+    setenv('ROS_MASTER_URI', 'http://<UbuntuIP>:11311')
+    setenv('ROS_IP', '<WindowsIP>')
+    rosinit
+catch
+end
+```
+
 
 ## License and Usage
 This co-simulation framework is developed in the erc-dynamics Lab. Please use wisely, and recommend improvements!
